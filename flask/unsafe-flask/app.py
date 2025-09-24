@@ -11,12 +11,11 @@ app = Flask(__name__)
 app.secret_key = os.urandom(32)
 
 try:
-    FLAG = os.environ["FLAG"]
     with open("flag.txt", "w") as f:
-        f.write(FLAG)
+        f.write(os.environ["FLAG"])
 except:
-    FLAG = "[**FLAG**]"
-    
+    pass
+
 @app.route("/")
 def index():
     return render_template("index.html")
