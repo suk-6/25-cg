@@ -1,0 +1,7 @@
+services:
+  basic-php:
+    build: 
+      context: ./basic-php
+      dockerfile: ../Dockerfile
+    ports:
+      - 19000:8000

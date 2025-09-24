@@ -1,5 +1,6 @@
 include:
   - ./flask/docker-compose.flag.yml
+  - ./php/docker-compose.flag.yml
 
 services:
   caddy:
