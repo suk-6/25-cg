@@ -11,3 +11,15 @@ services:
       dockerfile: ../Dockerfile
     ports:
       - 18001:8000
+  ping:
+    build: 
+      context: ./ping
+      dockerfile: ../Dockerfile
+    ports:
+      - 18002:8000
+  ping-adv:
+    build: 
+      context: ./ping-adv
+      dockerfile: ../Dockerfile
+    ports:
+      - 18003:8000
