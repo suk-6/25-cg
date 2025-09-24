@@ -1,2 +1,11 @@
 include:
   - ./flask/docker-compose.flag.yml
+
+services:
+  caddy:
+    image: caddy:2.10.2-alpine
+    container_name: caddy
+    ports:
+      - 9500:9500
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile

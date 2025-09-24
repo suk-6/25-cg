@@ -1,0 +1,5 @@
+http://*.cg.suk.kr:9500 {
+  reverse_proxy {http.request.host.labels.3}:8000 {
+    transport http
+  }
+}
