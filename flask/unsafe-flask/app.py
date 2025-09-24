@@ -12,6 +12,8 @@ app.secret_key = os.urandom(32)
 
 try:
     FLAG = os.environ["FLAG"]
+    with open("flag.txt", "w") as f:
+        f.write(FLAG)
 except:
     FLAG = "[**FLAG**]"
     
