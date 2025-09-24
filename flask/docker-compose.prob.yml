@@ -4,4 +4,10 @@ services:
       context: ./unsafe-flask
       dockerfile: ../Dockerfile
     ports:
-      - 8000:8000
+      - 18000:8000
+  simple-file-server:
+    build: 
+      context: ./simple-file-server
+      dockerfile: ../Dockerfile
+    ports:
+      - 18001:8000
