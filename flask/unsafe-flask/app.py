@@ -1,4 +1,3 @@
-#!/usr/bin/python3
 import base64
 import http.server
 import os
