@@ -16,4 +16,4 @@ RUN ["apt", "install", "-y", "curl", "iputils-ping"]
 
 COPY . .
 
-CMD ["python3", "app.py"]
+CMD ["python3", "-u", "app.py"]
