@@ -19,7 +19,7 @@ def index():
 def ping():
     if request.method == "POST":
         host = request.form.get("host")
-        for bad in ['[','$','cat','flag.py','"','*','?',' ']:
+        for bad in ['[','$','cat','flag.txt','"','*','?',' ']:
             if bad in host:
                 return "no hack!!!!!!!!!!!!!!!"
 
